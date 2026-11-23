@@ -2,10 +2,17 @@
 
 Membres du groupe :
 
+<<<<<<< HEAD
 - A
 - B
 - C Rhessael MVUTI
 - D
+=======
+- Mathys Guinet
+- Salima Banani
+- C
+- Erwan Cadoret
+>>>>>>> 8a9d7f4e0fae4f0ed16aa7bf6f033760e3a9641f
 
 [Consignes](CONSIGNES.md)
 
