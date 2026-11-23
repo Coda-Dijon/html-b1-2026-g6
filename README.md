@@ -3,7 +3,7 @@
 Membres du groupe :
 
 - Mathys Guinet
-- B
+- Salima Banani
 - C
 - Erwan Cadoret
 
