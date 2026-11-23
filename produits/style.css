@@ -1,0 +1,11 @@
+
+
+{
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header : header"
+        "sidebar : main"
+        "footer : footer";
+}
