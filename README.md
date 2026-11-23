@@ -5,7 +5,7 @@ Membres du groupe :
 - A
 - B
 - C
-- D
+- Erwan Cadoret
 
 [Consignes](CONSIGNES.md)
 
