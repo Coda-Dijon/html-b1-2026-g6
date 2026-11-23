@@ -4,7 +4,7 @@ Membres du groupe :
 
 - A
 - B
-- C
+- C Rhessael MVUTI
 - D
 
 [Consignes](CONSIGNES.md)
