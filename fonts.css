@@ -1,0 +1,7 @@
+
+@font-face {
+  font-family: "Bebas Neue";
+  src:
+    local("Bebas Neue"),
+    url("font/BebasNeue-Regular.woff2") format("woff2");
+}
