@@ -2,7 +2,7 @@
 
 Membres du groupe :
 
-- A
+- Mathys Guinet
 - B
 - C
 - Erwan Cadoret
