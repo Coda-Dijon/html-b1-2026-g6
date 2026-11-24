@@ -1,0 +1,92 @@
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(239, 237, 237);
+  
+}
+
+h1, h2, h3 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+/* ===== TYPOGRAPHIE ===== */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* ===== LOGO EN FOND, TRANSPARENT, SUR TOUT LE SITE ===== */
+.logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vh;
+    opacity: 0.2;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ===== TEXTE DESCENDU DE 2 CM ===== */
+.contenu {
+    display: flex;
+    align-items: flex-start; /* les deux blocs commencent à la même hauteur */
+    justify-content: space-between;
+    gap: 60px;
+    margin-top: 2cm;
+    padding: 0 40px;
+}
+
+.infos,
+.histoire {
+    font-size: 22px;
+}
+
+/* Texte "Notre histoire" : colonne à droite */
+.histoire {
+    width: 450px;
+    flex-shrink: 0;
+    text-align: justify;
+}
+
+.infos h2,
+.histoire h2 {
+    margin-top: 0;
+}
+
+
+/* ===== BANNIERE BLACK FRIDAY ===== */
+body {
+    margin: 0;
+}
+
+.banniere {
+    background: black;
+    color: #c4000a;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: calc(15px + 0.5cm) 15px;
+}
+
+.banniere img {
+    height: 55px;
+    vertical-align: middle;
+    margin-right: 20px;
+}
