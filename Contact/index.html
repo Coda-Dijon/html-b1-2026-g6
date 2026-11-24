@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <main>
+
+   
 
 <section class="infos">
     <h2>Notre magasin</h2>
@@ -22,7 +25,41 @@
     <p>Lundi - Samedi : 10h - 19h<br>Dimanche : fermé</p>
 </section>
 
-<img class="logo" src="../image_global/logo.webp" alt="">
+<h2 class="title"> CONTACTEZ NOUS </h2>
 
+<form action="">
+<fieldset>
+    <legend> Vos coordonnées </legend>
+    <label for="Prénom"> Prénom </label>
+    <input id="texte" type="text" name="Prénom" placeholder="Prénom*" required>
+</fieldset>
+
+<fieldset>
+    <label for="Nom"> Nom </label>
+    <input id="texte" type="text" name="Nom" placeholder="Nom*" required>
+</fieldset>
+
+<fieldset>
+    <label for="Email"> Email </label>
+    <input id="texte" type="text" name="Email" placeholder="Email*" required>
+</fieldset>
+
+<fieldset>
+    <label for="sujet"></label>
+    <select id="sujet" name="sujet">
+    <option value="Questions générales"> Questions générales </option>
+    <option value="Problemes techniques"> Problemes techniques </option>
+    <option value="Autres"> Autres </option>
+    </select>
+</fieldset>
+
+<label for="Message"> Message </label>
+<textarea id="Message" name="Message" rows="4" cols="50" required></textarea>
+
+<button type submit="submit"> Envoyer </button>
+
+</form>
+<img class="logo" src="../image_global/logo.webp" alt="">
+     </main>
 </body>
 </html>
