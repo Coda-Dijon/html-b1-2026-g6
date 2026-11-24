@@ -97,3 +97,16 @@ footer {
 }
 
 
+@media (min-width: 768px) {
+    header, footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
