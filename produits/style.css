@@ -15,6 +15,8 @@ body {
     "footer footer";
 }
 
+
+/* header */
 header {
     grid-column: 1 / -1;
     background-color: #1e293b; /* bleu foncé */
@@ -28,34 +30,6 @@ nav {
     padding: 1.5rem;
 }
 
-main {
-    background-color: gray;
-    grid-area: main;
-    padding: 1.5rem;
-    display: grid;
-    grid-template-areas: "product product product";
-    justify-content: space-around;
-}
-
-footer {
-    background-color: aqua;
-    grid-area: footer;
-    padding: 1.5rem;
-    text-align: center;
-}
-
-.widget-product {
-    display: grid;
-    text-align: center;
-    justify-content: start;
-    margin: 1.5rem;
-}
-
-.side-bar {
-    width: 220px;
-
-}
-
 .Barre-navigation {
     justify-content: space-around;
     display: grid;
@@ -66,3 +40,60 @@ footer {
     text-align: center;
     padding: 2rem;
 }
+/* header */
+
+/* main */
+main {
+    grid-area: main;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-areas: "product product product";
+    justify-content: space-around;
+}
+
+.widget-product {
+    display: grid;
+    text-align: center;
+    justify-content: start;
+    margin: 1.5rem;
+}
+/* main */
+
+
+/* size barre */
+.side-bar {
+    width: 220px;
+    padding: 1rem;
+}
+
+.side-bar-header {
+    text-align: center;
+}
+
+.side-bar-filtre  > div, button {
+    margin-top: 2rem;
+    display: grid;
+
+}
+
+.size-clothing{
+    margin-inline: 0.2rem;
+}
+.shoes{
+    margin-inline: 0.1rem;
+}
+  .size-filter h3 {
+    margin-top: 2rem;
+}
+/* size barre */
+
+
+
+footer {
+    background-color: aqua;
+    grid-area: footer;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+

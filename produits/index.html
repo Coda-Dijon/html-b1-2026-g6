@@ -50,15 +50,33 @@
     <nav class="side-bar">
         <div class="side-bar-header">
             <img alt="SVG-filtre" src="img/filter-list-svgrepo-com.png" height="50px">
-            <h1>Filtre</h1>
+            <h1>Filtrer</h1>
         </div>
         <ul class="side-bar-filtre">
             <div class="checkbox-group">
 
 
-                <h4>Couleur</h4>
+                <h2>Couleur</h2>
+                <label>
+                    <input type="checkbox" name="filter-checkbox" value="bleu">rouge
+                </label>
+                <label>
+                    <input type="checkbox" name="filter-checkbox" value="bleu">jaune
+                </label>
+                <label>
+                    <input type="checkbox" name="filter-checkbox" value="bleu">orange
+                </label>
+                <label>
+                    <input type="checkbox" name="filter-checkbox" value="bleu">vert
+                </label>
                 <label>
                     <input type="checkbox" name="filter-checkbox" value="bleu">bleu
+                </label>
+                <label>
+                    <input type="checkbox" name="filter-checkbox" value="bleu">violet
+                </label>
+                <label>
+                    <input type="checkbox" name="filter-checkbox" value="bleu">rose
                 </label>
 
             </div>
@@ -72,6 +90,7 @@
             </div>
 
             <div class="size-filter">
+                <h3>Taille Vêtements</h3>
                 <label><input type="checkbox" class="size-clothing">XS</label>
                 <label><input type="checkbox" class="size-clothing">S</label>
                 <label><input type="checkbox" class="size-clothing">M</label>
@@ -79,19 +98,19 @@
                 <label><input type="checkbox" class="size-clothing">Xl</label>
                 <label><input type="checkbox" class="size-clothing">XXl</label>
 
-
-                <label><input type="checkbox" class="choes">38</label>
-                <label><input type="checkbox" class="choes">39</label>
-                <label><input type="checkbox" class="choes">40</label>
-                <label><input type="checkbox" class="choes">41</label>
-                <label><input type="checkbox" class="choes">42</label>
-                <label><input type="checkbox" class="choes">43</label>
-                <label><input type="checkbox" class="choes">44</label>
-                <label><input type="checkbox" class="choes">45</label>
+                <h3>Taille Chaussures</h3>
+                <label><input type="checkbox" class="shoes">38</label>
+                <label><input type="checkbox" class="shoes">39</label>
+                <label><input type="checkbox" class="shoes">40</label>
+                <label><input type="checkbox" class="shoes">41</label>
+                <label><input type="checkbox" class="shoes">42</label>
+                <label><input type="checkbox" class="shoes">43</label>
+                <label><input type="checkbox" class="shoes">44</label>
+                <label><input type="checkbox" class="shoes">45</label>
 
             </div>
 
-            <button type="submit">FILTRER</button>
+            <button type="submit" id="BtnFiltrer">FILTRER</button>
         </ul>
     </nav>
 
