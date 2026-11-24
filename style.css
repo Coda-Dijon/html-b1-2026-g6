@@ -29,14 +29,6 @@ h1, h2, h3 {
     opacity: 0.2;
     z-index: -1;
     pointer-events: none;
-    background-color: #c4000a;   /* couleur du logo (change-la ici) */
-    mix-blend-mode: multiply;    /* le blanc du logo devient invisible */
-}
-
-.logo img {
-    display: block;
-    width: 100%;
-    mix-blend-mode: screen;      /* le noir du logo prend la couleur du fond */
 }
 
 /* ===== TEXTE DESCENDU DE 2 CM ===== */
@@ -129,9 +121,5 @@ footer {
   }
   .histoire {
     width: auto;
-  }
-  /* Logo de fond adapté à la largeur du téléphone */
-  .logo {
-    width: 90vw;
   }
 }
