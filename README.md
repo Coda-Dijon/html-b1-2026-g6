@@ -8,7 +8,6 @@ Membres du groupe :
 - Erwan Cadoret
 
 
-
 [Consignes](CONSIGNES.md)
 
 ## Déploiement
