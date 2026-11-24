@@ -29,6 +29,14 @@ h1, h2, h3 {
     opacity: 0.2;
     z-index: -1;
     pointer-events: none;
+    background-color: #c4000a;   /* couleur du logo (change-la ici) */
+    mix-blend-mode: multiply;    /* le blanc du logo devient invisible */
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+    mix-blend-mode: screen;      /* le noir du logo prend la couleur du fond */
 }
 
 /* ===== TEXTE DESCENDU DE 2 CM ===== */
@@ -122,37 +130,8 @@ footer {
   .histoire {
     width: auto;
   }
-}
-
-.form{
-  width: 60px;
-  padding: 20px;
-  margin: 30px;
-  border: 1px solid black;
-}
-
-.fieldset{
-  padding: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #9999;
-}
-
-.label{
-  display: block;
-  margin-bottom: 6px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #222;
-}
-
-.input,
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid ;
-}
-
-.button {
-  padding: 10;
+  /* Logo de fond adapté à la largeur du téléphone */
+  .logo {
+    width: 90vw;
+  }
 }
