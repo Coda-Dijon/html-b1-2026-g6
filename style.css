@@ -123,3 +123,36 @@ footer {
     width: auto;
   }
 }
+
+.form{
+  width: 60px;
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid black;
+}
+
+.fieldset{
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #9999;
+}
+
+.label{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid ;
+}
+
+.button {
+  padding: 10;
+}
