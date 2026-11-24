@@ -7,9 +7,12 @@
 
     
     <link rel="stylesheet" href="../fonts.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
+    <main>
+
+   
 
 <div class="banniere">
     BLACK FRIDAY <span class="rouge">-50 %</span>
@@ -31,6 +34,20 @@
 <section class="histoire">
     <h2>Notre histoire</h2>
 
+    <p>Street Style est né en 2024, à Paris. Au départ, il y a quatre collègues : Erwan, Rhessael, Mathys et Salima. Ce qui nous réunit tous les quatre, c'est le streetwear. 
+        C'est notre style à tous, celui qu'on porte au quotidien et qui nous ressemble.</p>
+    <p> C'est cette passion commune qui a tout lancé. À force d'en parler, une idée est venue 
+        
+        : pourquoi ne pas créer notre propre marque ? Une marque 100 % streetwear, qui ressemble à la rue, à Paris et à ceux qui y vivent. 
+        C'est comme ça que l'aventure Street Style a commencé. Aujourd'hui, Street Style propose des vêtements pour femme, homme et unisexe, pensés pour celles et ceux qui veulent affirmer leur style au quotidien, sans se prendre la tête. 
+        Ton look, ta loi, Street Style est fait pour toi.</p>
+</section>
+
+</div>
+
+<section class="histoire">
+    <h2>Notre histoire</h2>
+
     <p>Street Style est né en 2024, à Paris. Au départ, il y a quatre collègues : Erwan, Rhessael, Mathis et Salima. Ce qui nous réunit tous les quatre, c'est le streetwear. 
         C'est notre style à tous, celui qu'on porte au quotidien et qui nous ressemble.</p>
     <p> C'est cette passion commune qui a tout lancé. À force d'en parler, une idée est venue 
@@ -42,9 +59,45 @@
 
 </div>
 
+<!-- Logo en fond, en couleur et transparent (le style est dans ../style.css, classe .logo) -->
 <div class="logo">
     <img src="../image_global/logo.webp" alt="">
 </div>
 
+<h2 class="title"> CONTACTEZ NOUS </h2>
+
+<form action="">
+<fieldset>
+    <legend> Vos coordonnées </legend>
+    <label for="Prénom"> Prénom </label>
+    <input id="texte" type="text" name="Prénom" placeholder="Prénom*" required>
+</fieldset>
+
+<fieldset>
+    <label for="Nom"> Nom </label>
+    <input id="texte" type="text" name="Nom" placeholder="Nom*" required>
+</fieldset>
+
+<fieldset>
+    <label for="Email"> Email </label>
+    <input id="texte" type="text" name="Email" placeholder="Email*" required>
+</fieldset>
+
+<fieldset>
+    <label for="sujet"></label>
+    <select id="sujet" name="sujet">
+    <option value="Questions générales"> Questions générales </option>
+    <option value="Problemes techniques"> Problemes techniques </option>
+    <option value="Autres"> Autres </option>
+    </select>
+</fieldset>
+
+<label for="Message"> Message </label>
+<textarea id="Message" name="Message" rows="4" cols="50" required></textarea>
+
+<button type submit="submit"> Envoyer </button>
+
+</form>
+     </main>
 </body>
 </html>
