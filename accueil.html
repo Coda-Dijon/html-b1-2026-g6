@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <title>Street Style — Vêtements urbains</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,91 +10,59 @@
 
   <a href="#contenu" class="skip-link">Aller au contenu</a>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">Street Style</a>
-      
-      <nav aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html" aria-current="page">Accueil</a></li>
-          <li><a href="#collection">Collection</a></li>
-          <li><a href="#footer">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <a href="index.html" class="logo">Street Style</a>
+    
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="#collection">Collection</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main id="contenu">
-    
-    <!-- Bannière -->
     <section class="hero">
-      <div class="container">
-        <h1>L'essentiel du vestiaire urbain.</h1>
-        <p>Coupes boxy, coton épais et finitions durables.</p>
-        <a href="#collection" class="btn">Voir la sélection</a>
-      </div>
+      <h1>L'essentiel du vestiaire urbain.</h1>
+      <p>Coupes boxy, coton épais et finitions durables.</p>
+      <a href="#collection" class="btn">Voir la sélection</a>
     </section>
 
-    <!-- Produits -->
-    <section id="collection" class="collection">
-      <div class="container">
-        <h2>Pièces phares</h2>
+    <section id="collection">
+      <h2>Pièces phares</h2>
 
-        <div class="grid">
-          <article class="card">
-            <div class="img-box" role="img" aria-label="Hoodie Boxy Noir">Visuel Hoodie</div>
-            <h3><a href="#">Hoodie Heavyweight Noir</a></h3>
-            <p>85,00 &euro;</p>
-          </article>
+      <div class="grid">
+        <article>
+          <p class="img-box" role="img" aria-label="Hoodie Boxy Noir">Visuel Hoodie</p>
+          <h3><a href="#">Vetement1</a></h3>
+          <p>85,00 &euro;</p>
+        </article>
 
-          <article class="card">
-            <div class="img-box" role="img" aria-label="Pantalon Cargo Olive">Visuel Cargo</div>
-            <h3><a href="#">Cargo Parachute Olive</a></h3>
-            <p>95,00 &euro;</p>
-          </article>
+        <article>
+          <p class="img-box" role="img" aria-label="Pantalon Cargo Olive">Visuel Cargo</p>
+          <h3><a href="#">Vetement2</a></h3>
+          <p>95,00 &euro;</p>
+        </article>
 
-          <article class="card">
-            <div class="img-box" role="img" aria-label="T-shirt Oversize Blanc">Visuel T-Shirt</div>
-            <h3><a href="#">T-Shirt Boxy Off-White</a></h3>
-            <p>40,00 &euro;</p>
-          </article>
-        </div>
+        <article>
+          <p class="img-box" role="img" aria-label="T-shirt Oversize Blanc">Visuel T-Shirt</p>
+          <h3><a href="#">Vetement3</a></h3>
+          <p>40,00 &euro;</p>
+        </article>
       </div>
     </section>
-
   </main>
 
-  <footer id="footer" class="site-footer">
-    <div class="container footer-grid">
-      
-      <div>
-        <strong class="logo">Street Style</strong>
-        <p>Vêtements urbains pensés pour durer.</p>
-      </div>
-
-      <nav aria-label="Menu pied de page">
-        <h2>Boutique</h2>
-        <ul>
-          <li><a href="#">Nouveautés</a></li>
-          <li><a href="#">Homme</a></li>
-          <li><a href="#">Femme</a></li>
-        </ul>
-      </nav>
-
-      <div>
-        <h2>Newsletter</h2>
-        <form action="#" method="post">
-          <label for="email" class="sr-only">Votre e-mail</label>
-          <input type="email" id="email" name="email" placeholder="ton.email@exemple.fr" required>
-          <button type="submit" class="btn">OK</button>
-        </form>
-      </div>
-
-    </div>
-
-    <div class="container footer-bottom">
-      <small>&copy; 2026 Street Style — <a href="#">Mentions légales</a> &bull; <a href="#">CGV</a></small>
-    </div>
+  <footer id="footer">
+    <nav aria-label="Pied de page">
+      <ul>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="#">CGV</a></li>
+        <li><a href="mailto:contact@streetstyle.fr">contact@streetstyle.fr</a></li>
+      </ul>
+    </nav>
+    <p><small>&copy; 2026 Street Style</small></p>
   </footer>
 
 </body>
