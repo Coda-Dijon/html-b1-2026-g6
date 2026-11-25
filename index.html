@@ -1,108 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Street Style — Accueil</title>
-  
-  <!-- Import des polices utilisées dans ton CSS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Style - Accueil</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="gen-nav" id="gen-nav" aria-label="Main">
-  <a class="gen-logo" href="index.html"><img src="image_global/logo.webp" alt="" height="70"></a>
-  <button type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu"></button>
-  <ul id="gen-menu">
-    <li><a href="index.html">Home</a></li>
 
-    <li class="has-sub">
-      <a href="produits.html">Vêtement <span class="gen-arrow" aria-hidden="true">▾</span></a>
-      <ul id="gen-sub-2">
-        <li><a href="#">Homme</a></li>
-        <li><a href="#">Femme</a></li>
-        <li><a href="#">Enfant</a></li>
-      </ul>
-    </li>
-    <li><a href="#">à propos</a></li>
-    <li><a href="contact.html">Contactez-nous</a></li>
-  </ul>
-</nav>
-
-  <!-- Bannière Black Friday -->
-  <aside class="banniere" aria-label="Offre promotionnelle">
-    BLACK FRIDAY <span class="rouge">-50 %</span>
-  </aside>
-
-  <!-- Logo en filigrane en arrière-plan (décoratif donc alt vide + aria-hidden) -->
-  <!-- Logo en couleur et transparent (le style est dans style.css, classe .logo) -->
-  <div class="logo" aria-hidden="true">
-    <img src="image_global/logo.webp" alt="">
-  </div>
-
-  <!-- En-tête simple -->
-  <header class="site-header">
-    <h1>Street Style</h1>
-    <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="index.html" aria-current="page">Accueil</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="gen-nav" id="gen-nav" aria-label="Main">
+        <a class="gen-logo" href="index.html"><img src="image_global/logo.webp" alt="Logo Street Style" height="70"></a>
+        <button type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul id="gen-menu">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-sub">
+                <a href="produits.html">Vêtement <span class="gen-arrow" aria-hidden="true">▾</span></a>
+                <ul id="gen-sub-2">
+                    <li><a href="produits.html">Homme</a></li>
+                    <li><a href="produits.html">Femme</a></li>
+                    <li><a href="produits.html">Enfant</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html">À propos</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <!-- Contenu principal structuré avec tes classes .contenu, .infos et .histoire -->
-  <main class="contenu">
-    
-    <!-- Colonne de gauche : présentation / pièces phares -->
-    <section class="infos">
-      <h2>Le drop de la semaine</h2>
-      <p>Découvre nos nouvelles offres.</p>
+    <div class="banniere">
+        BLACK FRIDAY <span class="rouge">-50 %</span>
+    </div>
 
-      <div class="selection">
-        <article>
-          <h3>Vetement1 — 85 &euro;</h3>
-          <p>Description du vêtement 1.</p>
-        </article>
+    <div class="logo">
+        <img src="image_global/logo.webp" alt="">
+    </div>
 
-        <article>
-          <h3>Vetement2 — 95 &euro;</h3>
-          <p>Description du vêtement 2.</p>
-        </article>
-      </div>
+<main>
+        <!-- 1. Grande bannière d'accroche -->
+        <section class="hero">
+            <h1>TON LOOK, TA LOI.</h1>
+            <p>Le streetwear parisien pensé pour le quotidien. Découvre les nouvelles pièces homme, femme et unisexe.</p>
+            <a href="produits.html" class="btn">Voir la collection</a>
+        </section>
 
-      <a href="boutique.html" class="btn">Voir toute la boutique</a>
-    </section>
+        <!-- 2. Vitrine des produits phares -->
+        <section class="section-accueil">
+            <h2>Nos best-sellers</h2>
+            <div class="grille-accueil">
+                <article class="carte-accueil">
+                    <img src="produits/img/img_produits/running-shoe-371624_1280.jpg" alt="Sneakers Street Run">
+                    <h3>Chaussure</h3>
+                    <p>999,99 €</p>
+                    <a href="produits.html" class="btn">Voir le produit</a>
+                </article>
+                <article class="carte-accueil">
+                    <img src="produits/img/img_produits/running-shoe-371624_1280.jpg" alt="Hoodie Oversize Paris">
+                    <h3>La meme chaussure</h3>
+                    <p>999,99 €</p>
+                    <a href="produits.html" class="btn">Voir le produit</a>
+                </article>
+                <article class="carte-accueil">
+                    <img src="produits/img/img_produits/running-shoe-371624_1280.jpg" alt="Cargo Urbain Noir">
+                    <h3>Encore la meme chaussure</h3>
+                    <p>999,99 €</p>
+                    <a href="produits.html" class="btn">Voir le produit</a>
+                </article>
+            </div>
+        </section>
 
-    <!-- Colonne de droite : ton bloc .histoire -->
-    <aside class="histoire">
-      <h2>Notre histoire</h2>
-      <p>
-        Née dans la rue, Street Style est une marque indépendante dédiée aux essentiels du vestiaire urbain. 
-        Nous privilégions les matières lourdes, les coupes travaillées et les séries limitées loin de la fast-fashion.
-      </p>
-      <p>
-        Chaque pièce est dessinée avec soin pour allier confort brut et durabilité au quotidien.
-      </p>
-    </aside>
+        <!-- 3. Bandeau réassurance -->
+        <section class="bandeau-atouts">
+            <div>Livraison offerte dès 80 €</div>
+            <div>Marque créée à Paris en 2024</div>
+            <div>Retours gratuits sous 30 jours</div>
+        </section>
 
-  </main>
+    </main>
 
-  <!-- Pied de page minimaliste -->
-  <footer class="site-footer">
-    <nav aria-label="Pied de page">
-      <ul>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">CGV</a></li>
-        <li><a href="mailto:contact@streetstyle.fr">contact@streetstyle.fr</a></li>
-      </ul>
-    </nav>
-    <p><small>&copy; 2026 Street Style</small></p>
-  </footer>
+    <footer>
+        <p>Street Style</p>
+        <a href="https://github.com/ErwanC25"><img src="image_global/OIP.webp" alt="github" height="50"></a>
+    </footer>
 
 </body>
 </html>
