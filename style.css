@@ -155,6 +155,65 @@ textarea {
     width: auto;
   }
 }
+/* PAGE PRODUIT */
+.product{
+    display: grid;
+    grid-template-areas:
+            "header header header"
+            "sidebar main main"
+            "footer footer footer";
+}
+
+.header-product {
+    display: unset;
+    grid-area: header;
+}
+
+.product-main {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "product product product";
+    justify-content: space-around;
+    min-height: 160px;
+
+}
+
+footer {
+    grid-area: footer;
+    padding: 1.5rem;
+    text-align: center;
+}
+/* size barre */
+.side-bar {
+    grid-area: sidebar;
+    width: 220px;
+    padding: 1rem;
+}
+
+.side-bar-header {
+    text-align: center;
+}
+
+.side-bar-filtre  > div, button {
+    margin-top: 2rem;
+    display: grid;
+
+}
+
+.size-clothing{
+    margin-inline: 0.2rem;
+}
+.shoes{
+    margin-inline: 0.1rem;
+}
+.size-filter h3 {
+    margin-top: 2rem;
+}
+/* size barre */
 
 
 /* STYLE BARRE DE NAVIGATION !!!!! */

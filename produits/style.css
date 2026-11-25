@@ -4,14 +4,7 @@
     padding: 0;
 }
 
-body {
-    min-width: 0;
-    display: grid;
-    grid-template-areas:
-    "header header header"
-    "sidebar main main"
-    "footer footer footer";
-}
+
 
 
 /* !!!! Barre de navigation */
