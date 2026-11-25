@@ -295,6 +295,8 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .gen-nav *, .gen-hamburger span { transition: none; }
+    .gen-nav *, .gen-hamburger span {
+        transition: none;
+    }
 }
 /* Barre de Navigation */
