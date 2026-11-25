@@ -299,4 +299,87 @@ textarea {
         transition: none;
     }
 }
-/* Barre de Navigation */
+
+/* ===== AJOUTS PAGE D'ACCUEIL ===== */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("produits/img/img_produits/running-shoe-371624_1280.jpg") center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 0 0 15px;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.hero .btn {
+    background: #c4000a;
+    font-size: 22px;
+    padding: 14px 32px;
+}
+
+.section-accueil {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.section-accueil h2 {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.grille-accueil {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.carte-accueil {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.carte-accueil:hover {
+    transform: translateY(-5px);
+}
+
+.carte-accueil img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.bandeau-atouts {
+    display: flex;
+    justify-content: space-around;
+    background: #000000;
+    color: #ffffff;
+    padding: 35px 20px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+    .grille-accueil, .bandeau-atouts {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .hero h1 { font-size: 44px; }
+}
