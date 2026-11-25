@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="produits/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Produits</title>
 </head>
-<body class="product">
-    <header class="product-header">
-        <nav class="Barre-navigation">
-            <a href="">Acceuil</a>
-            <form class="Recherche">
-                <label for="Recherche"></label>
-                <input id="Recherche" placeholder="Rechercher des articles">
-            </form>
-            <a href="">Femme</a>
-            <a href="">Homme</a>
-            <a href="">Contact</a>
-        </nav>
 
+<body class="product">
+<header>
+    <nav class="gen-nav" id="gen-nav" aria-label="Main">
+        <a class="gen-logo" href="/"><img src="image_global/logo.webp" alt="" height="70"></a>
+        <button type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu"></button>
+        <ul id="gen-menu">
+            <li><a href="/">Home</a></li>
+
+            <li class="has-sub">
+                <a href="#">Vetement <span class="gen-arrow" aria-hidden="true">▾</span></a>
+                <ul id="gen-sub-2">
+                    <li><a href="#">Homme</a></li>
+                    <li><a href="#">Femme</a></li>
+                    <li><a href="#">Enfant</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
         <div class="Banner">
             <p> De Paris jusqu'a ta rue le Style n'a jamais autant plu </p>
             <p>black friday</p>
