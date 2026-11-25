@@ -14,7 +14,7 @@ body {
 }
 
 
-/* header */
+/* !!!! Barre de navigation */
 .gen-nav {
     position: relative;
     display: flex;
@@ -89,7 +89,7 @@ body {
 .gen-arrow { font-size: 0.75em; opacity: 0.8; }
 
 
-/* dropdowns: open on hover and when a link inside has keyboard focus */
+/* dropdowns */
 .gen-nav > ul > li > ul {
     display: none;
     position: absolute;
@@ -115,7 +115,7 @@ body {
 .gen-nav > ul > li > ul a:hover,
 .gen-nav > ul > li > ul a:focus-visible { color: #ffffff; background: #919191; }
 
-/* small screens: the links fold away behind the menu button */
+/* small screens */
 @media (max-width: 770px) {
     .gen-nav { display: flex; flex-wrap: wrap; }
     .gen-hamburger { display: flex; margin-left: auto; }
@@ -159,7 +159,7 @@ body {
     text-align: center;
     padding: 2rem;
 }
-/* header */
+/* Barre de Navigation */
 
 /* main */
 main {
