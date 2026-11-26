@@ -10,36 +10,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Barre de navigation -->
-    <input class="checkbox" type="checkbox" id="modal-toggle">
-    <nav class="gen-nav" id="gen-nav" aria-label="Main">
-        <a class="gen-logo" href="index.html"><img src="image_global/logo.webp" alt="" height="70"></a>
+<nav class="gen-nav" id="gen-nav" aria-label="Main">
+    <a class="gen-logo" aria-label="Read more about Seminole tax hike" href="index.html"><img src="image_global/logo.webp" alt="" height="70"></a>
+    <button type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu">            <span></span>
+            <span></span>
+            <span></span></button>
+    <ul id="gen-menu">
+        <li><a href="index.html">Home</a></li>
 
+        <li class="has-sub">
+            <a href="produits.html">Vêtement <span class="gen-arrow" aria-hidden="true">▾</span></a>
+            <ul id="gen-sub-2">
+                <li><a href="#">Homme</a></li>
+                <li><a href="#">Femme</a></li>
+                <li><a href="#">Enfant</a></li>
+            </ul>
+        </li>
+        <li><a href="#">à propos</a></li>
+        <li><a href="contact.html">Contactez-nous</a></li>
+    </ul>
+</nav>
 
-        <label for="modal-toggle">
-            <p type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu">
-                <span></span>
-                <span></span>
-                <span></span></p>
-        </label>
-
-        <ul id="gen-menu">
-            <li><a href="index.html">Home</a></li>
-
-            <li class="has-sub">
-                <a href="produits.html">Vêtement <span class="gen-arrow" aria-hidden="true">▾</span></a>
-                <ul id="gen-sub-2">
-                    <li><a href="produits.html">Homme</a></li>
-                    <li><a href="produits.html">Femme</a></li>
-                    <li><a href="produits.html">Enfant</a></li>
-                </ul>
-            </li>
-            <li><a href="contact.html">À propos</a></li>
-            <li><a href="contact.html">Contactez-nous</a></li>
-        </ul>
-    </nav>
-
-<main>
+    <main>
 
    
 <!-- Bannière black friday -->
@@ -61,6 +53,7 @@
 </section>
 
 <!--Bloc a droite : histoire de la marque -->
+<div class="histoire-contact">
 <section class="histoire">
     <h3>Notre histoire</h3>
 
@@ -70,10 +63,8 @@
         
         : pourquoi ne pas créer notre propre marque ? Une marque 100 % streetwear, qui ressemble à la rue, à Paris et à ceux qui y vivent. 
         C'est comme ça que l'aventure Street Style a commencé. Aujourd'hui, Street Style propose des vêtements pour femme, homme et unisexe, pensés pour celles et ceux qui veulent affirmer leur style au quotidien, sans se prendre la tête. 
-        
-        <br><b>Ton look, ta loi, Street Style est fait pour toi.</b></p>
+        Ton look, ta loi, Street Style est fait pour toi.</p>
 </section>
-
 </div>
 
 <!-- Logo en fond, en couleur et transparent -->
@@ -93,19 +84,13 @@
     <legend> Vos coordonnées </legend>
     <label for="Prénom"> Prénom </label>
     <input id="texte" type="text" name="Prénom" placeholder="Prénom*" required>
-</fieldset>
 
-<fieldset>
     <label for="Nom"> Nom </label>
     <input id="texte" type="text" name="Nom" placeholder="Nom*" required>
-</fieldset>
 
-<fieldset>
     <label for="Email"> Email </label>
     <input id="texte" type="text" name="Email" placeholder="Email*" required>
-</fieldset>
-
-<fieldset>
+    
     <label for="sujet"></label>
     <select id="sujet" name="sujet">
     <option value="Questions générales"> Questions générales </option>
@@ -120,6 +105,7 @@
 <button type="submit"> Envoyer </button>
 
 </form>
+</div>
 </div>
 </section>
      </main>

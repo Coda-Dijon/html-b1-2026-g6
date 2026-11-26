@@ -115,7 +115,7 @@ footer {
 }
 
 /*Code CSS POUR FORMULAIRE DE CONTACT */
-.formulaire-contact{
+.formulaire-contact{ 
   box-sizing: border-box;
   margin: 2rem;
   padding: 0;
@@ -148,6 +148,7 @@ footer {
   width: 100%;
   padding: 0.8rem;
   box-sizing: border-box;
+  margin-bottom: inherit;
 }
 
 @media (max-width: 800px) {
@@ -409,7 +410,7 @@ footer {
 }
     .checkbox:checked ~ .gen-nav ul {
         display: initial;
-    }
+}
 
 @media (prefers-reduced-motion: reduce) {
     .gen-nav *, .gen-hamburger span {
