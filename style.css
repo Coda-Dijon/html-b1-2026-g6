@@ -24,7 +24,7 @@ h1, h2, h3 {
 
 /* le blanc de l'image devient transparent */
 .logo img {
-    mix-blend-mode: multiply; color: #c4000a;
+    mix-blend-mode: multiply;
 }
 
 .contenu {
@@ -54,12 +54,7 @@ h1, h2, h3 {
 
 
 
-header, footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .skip-link {
     position: absolute;
@@ -107,11 +102,6 @@ a:focus-visible {
 
 footer a {
   margin: 1rem;
-}
-
-footer {
-  margin-top: 60px;
-  border-top: 2px solid #999;
 }
 
 /*Code CSS POUR FORMULAIRE DE CONTACT */
@@ -188,7 +178,6 @@ footer {
 }
 
 .header-product {
-    display: unset;
     grid-area: header;
 }
 
@@ -212,8 +201,14 @@ footer {
 
 footer {
     grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     text-align: center;
+    margin-top: 60px;
+    border-top: 2px solid #999;
 }
 /* size barre */
 .side-bar {
@@ -267,13 +262,10 @@ footer {
     gap: 1rem;
     text-decoration: none;
     margin-left: 1rem;
-}
-.gen-logo img, .gen-logo svg { display: block; height: 4rem; width: auto; }
-
-.gen-logo {
     border-radius: 1rem;
     transition: transform 0.2s, opacity 0.2s;
 }
+.gen-logo img, .gen-logo svg { display: block; height: 4rem; width: auto; }
 
 .gen-logo:hover,
 .gen-logo:focus-visible {
@@ -284,12 +276,6 @@ footer {
 .gen-nav .gen-logo:focus-visible {
     outline: 3px solid #ffffff;
     outline-offset: 1rem;
-}
-
-
-.gen-logo {
-    border-radius: 6px;
-    transition: transform 0.2s, opacity 0.2s;
 }
 
 .gen-logo:hover,
@@ -395,7 +381,7 @@ footer {
         border-radius: 0 0 5px 5px;
         box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
     }
-    .gen-nav.mobile-open { border-radius: 5px 5px 0 0; }
+
     .gen-nav > ul > li > a { height: auto; padding: 14px 20px; }
     .gen-nav > ul > li > ul {
         display: block;
@@ -407,8 +393,8 @@ footer {
     }
     .gen-nav > ul > li > ul a { padding: 10px 32px; }
 }
-    .checkbox:checked ~ .gen-nav ul {
-        display: initial;
+    .checkbox:checked ~ .gen-nav > ul {
+        display: flex;
     }
 
 @media (prefers-reduced-motion: reduce) {
@@ -466,7 +452,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
-    flex-direction: column;
 }
 
 
@@ -490,7 +475,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 1rem;
-    flex-direction: column;
+    min-width: 0;
 }
 
 
@@ -515,12 +500,10 @@ footer {
 }
 
 
-
-
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .grille-accueil, .product-main {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
     .bandeau-atouts, .contenu {
         flex-direction: row;
@@ -534,5 +517,12 @@ footer {
     }
     .hero h1 {
         font-size: 4rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grille-accueil, .product-main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
     }
 }
