@@ -9,29 +9,36 @@
 </head>
 <body>
 <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+<!-- Barre de navigation -->
+    <input class="checkbox" type="checkbox" id="modal-toggle">
     <nav class="gen-nav" id="gen-nav" aria-label="Main">
-        <a class="gen-logo" href="index.html"><img src="image_global/logo.webp" alt="Logo Street Style" height="70"></a>
-        <button type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
+        <a class="gen-logo" href="index.html"><img src="image_global/logo.webp" alt="" height="70"></a>
+
+
+        <label for="modal-toggle">
+            <p type="button" class="gen-hamburger" aria-label="Menu" aria-expanded="false" aria-controls="gen-menu">
+                <span></span>
+                <span></span>
+                <span></span></p>
+        </label>
+
         <ul id="gen-menu">
             <li><a href="index.html">Home</a></li>
+
             <li class="has-sub">
                 <a href="produits.html">Vêtement <span class="gen-arrow" aria-hidden="true">▾</span></a>
                 <ul id="gen-sub-2">
-                    <li><a href="produits.html">Homme</a></li>
-                    <li><a href="produits.html">Femme</a></li>
-                    <li><a href="produits.html">Enfant</a></li>
+                    <li><a href="#">Homme</a></li>
+                    <li><a href="#">Femme</a></li>
+                    <li><a href="#">Enfant</a></li>
                 </ul>
             </li>
-            <li><a href="contact.html">À propos</a></li>
+            <li><a href="#">À propos</a></li>
             <li><a href="contact.html">Contactez-nous</a></li>
         </ul>
     </nav>
 
-    <div class="banniere">
+<div class="banniere">
         BLACK FRIDAY <span class="rouge">-50 %</span>
     </div>
 

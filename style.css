@@ -424,7 +424,7 @@ footer {
 /* small screens */
 @media (max-width: 800px) {
     .gen-nav { display: flex; flex-wrap: wrap; }
-    .gen-hamburger { display: flex; margin-left: auto; }
+    .gen-hamburger { display: flex; right: 2rem; top: 2.5rem ; position: absolute }
     .gen-logo { order: 0; }
     .gen-nav > ul {
         display: none;
@@ -451,17 +451,22 @@ footer {
         box-shadow: none;
     }
     .gen-nav > ul > li > ul a { padding: 10px 32px; }
-    /* the bars turn into an X */
-    .gen-nav.mobile-open .gen-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-    .gen-nav.mobile-open .gen-hamburger span:nth-child(2) { opacity: 0; }
-    .gen-nav.mobile-open .gen-hamburger span:nth-child(3) { width: 22px; transform: translateY(-7px) rotate(-45deg); }
 }
+    .checkbox:checked ~ .gen-nav ul {
+        display: initial;
+    }
 
 @media (prefers-reduced-motion: reduce) {
     .gen-nav *, .gen-hamburger span {
         transition: none;
     }
 }
+.checkbox[type="checkbox"] {
+    opacity: 0;       /* Invisible */
+    position: absolute;
+    z-index: -1;      /* Derrière les autres éléments */
+}
+
 /* STYLE BARRE DE NAVIGATION */
 
 /* ===== AJOUTS PAGE D'ACCUEIL ===== */
