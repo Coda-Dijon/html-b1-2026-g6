@@ -114,38 +114,62 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+/*Code CSS POUR FORMULAIRE DE CONTACT */
 
 .form{
-  width: 60px;
+  Position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
   padding: 20px;
   margin: 30px;
-  border: 1px solid black;
+  border: 10px solid black;
 }
 
-.fieldset{
+.formulaire-contact{ 
+  width: 340px;
+  flex-shrink: 0;
+  margin-top: 0px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 40px;
+
+}
+
+.contact{
+  width: 100%;
+  
+}
+
+.contact form{
+  padding: 20px;
+  border: 1px solid black;
+
+}
+
+.contact fieldset{
   padding: 20px;
   margin-bottom: 20px;
   border: 1px solid #9999;
 }
 
-.label{
+.contact label{
   display: block;
   margin-bottom: 6px;
-  font-size: 1rem;
-  font-weight: bold;
-  color: #222;
 }
 
-.input,
-select,
-textarea {
+.contact input,
+.contact select,
+.contact textarea {
   width: 100%;
   padding: 8px;
-  border: 1px solid ;
+  box-sizing: border-box;
 }
 
 .button {
-  padding: 10;
+  padding: 10px 16px;
+  cursor: pointer; 
 }
 
 @media (max-width: 800px) {
