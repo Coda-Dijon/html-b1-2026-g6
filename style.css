@@ -170,16 +170,27 @@ textarea {
 }
 
 .product-main {
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    margin-bottom: 15px;
     grid-area: main;
     display: grid;
-    grid-template-areas: "product product product";
-    justify-content: space-around;
-    min-height: 160px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 1rem;
+}
 
+.widget-product {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.2s;
+    margin-right: 1rem;
+}
+
+.image-product {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
 footer {
