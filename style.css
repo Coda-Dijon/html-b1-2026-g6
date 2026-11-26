@@ -191,7 +191,7 @@ footer {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .contenu {
     flex-direction: column;
     align-items: center;
@@ -311,6 +311,40 @@ footer {
     margin-left: 1rem;
 }
 .gen-logo img, .gen-logo svg { display: block; height: 70px; width: auto; }
+
+.gen-logo {
+    border-radius: 6px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.gen-logo:hover,
+.gen-logo:focus-visible {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.gen-nav .gen-logo:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
+
+.gen-logo {
+    border-radius: 6px;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.gen-logo:hover,
+.gen-logo:focus-visible {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.gen-nav .gen-logo:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
 .gen-logo-text { color: #ffffff; font-size: 17px; font-weight: 700; white-space: nowrap; }
 
 .gen-hamburger {
