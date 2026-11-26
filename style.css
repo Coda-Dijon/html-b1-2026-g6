@@ -329,7 +329,7 @@ footer {
 .gen-nav > ul > li > ul a:focus-visible { color: #ffffff; background: #919191; }
 
 /* small screens */
-@media (max-width: 770px) {
+@media (max-width: 800px) {
     .gen-nav { display: flex; flex-wrap: wrap; }
     .gen-hamburger { display: flex; margin-left: auto; }
     .gen-logo { order: 0; }
@@ -447,10 +447,17 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .grille-accueil, .bandeau-atouts {
+    .grille-accueil, .bandeau-atouts .product-main {
         grid-template-columns: 1fr;
         flex-direction: column;
         gap: 20px;
     }
     .hero h1 { font-size: 44px; }
+}
+
+@media (max-width: 800px) {
+    .product-main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
