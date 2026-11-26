@@ -77,7 +77,6 @@ header, footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
 }
 
 header ul, footer ul {
@@ -155,6 +154,7 @@ textarea {
     width: auto;
   }
 }
+
 /* PAGE PRODUIT */
 .product{
     display: grid;
@@ -358,6 +358,7 @@ footer {
         transition: none;
     }
 }
+/* STYLE BARRE DE NAVIGATION */
 
 /* ===== AJOUTS PAGE D'ACCUEIL ===== */
 .hero {
