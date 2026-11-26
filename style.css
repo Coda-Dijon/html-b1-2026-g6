@@ -413,7 +413,7 @@ footer {
 
 /* ===== AJOUTS PAGE D'ACCUEIL ===== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("produits/img/img_produits/running-shoe-371624_1280.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url("produits/img/img_produits/running-shoe-371624_1280.webp") center/cover no-repeat;
     color: #ffffff;
     text-align: center;
     padding: 7rem 1.5rem;
