@@ -19,9 +19,18 @@ h1, h2, h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100vh;
+<<<<<<< HEAD
     opacity: 0.2;
+=======
+    opacity: 0.1 ;
+>>>>>>> e07517b ( j'ai essayer de changer la couleur du logo)
     z-index: -1;
     pointer-events: none;
+}
+
+/* le blanc de l'image devient transparent */
+.logo img {
+    mix-blend-mode: multiply; color: #c4000a;
 }
 
 /* ===== TEXTE DESCENDU DE 2 CM ===== */
