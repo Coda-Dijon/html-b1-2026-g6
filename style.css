@@ -22,17 +22,12 @@ h1, h2, h3 {
     pointer-events: none;
 }
 
-/* le blanc de l'image devient transparent */
-.logo img {
-    mix-blend-mode: multiply;
-}
-
 .contenu {
     display: flex;
     align-items: flex-start; /* les deux blocs commencent à la même hauteur */
     justify-content: space-between;
     flex-direction: column;
-    gap: 60px;
+    gap: 6rem;
     margin-top: 2rem;
     padding: 0 2rem;
 }
@@ -58,10 +53,10 @@ h1, h2, h3 {
 
 .skip-link {
     position: absolute;
-    top: -100px;
-    left: 16px;
+    top: -6rem;
+    left: 1rem;
     z-index: 2000;
-    padding: 12px 20px;
+    padding: 1rem 2rem;
     background: #c4000a;
     color: #ffffff;
     font-weight: bold;
