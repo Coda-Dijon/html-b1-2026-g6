@@ -393,6 +393,8 @@ footer {
         box-shadow: none;
     }
     .gen-nav > ul > li > ul a { padding: 10px 32px; }
+
+    
 }
     .checkbox:checked ~ .gen-nav > ul {
         display: flex;
